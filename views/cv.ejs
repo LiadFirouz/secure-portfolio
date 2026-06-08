@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>Curriculum Vitae - Liad Firouz</title>
+    <%- include('partials/head') %>
+        <style>
+            /* דורס סגנונות ספציפיים כדי לשמור על הניגודיות של ה-CV */
+            .cv-container {
+                max-width: 1100px;
+                margin: auto;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .cv-sidebar {
+                background-color: #0a0a0a;
+                color: #f8f9fa;
+            }
+
+            .cv-sidebar a {
+                color: #f8f9fa;
+                text-decoration: none;
+            }
+
+            .cv-sidebar a:hover {
+                text-decoration: underline;
+            }
+
+            .cv-main {
+                background-color: #ffffff;
+                color: #212529;
+            }
+
+            .section-title {
+                border-bottom: 2px solid #e9ecef;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1.5rem;
+                font-weight: 600;
+            }
+
+            .skill-category {
+                font-weight: 600;
+                margin-bottom: 0.2rem;
+            }
+
+            .skill-list {
+                font-size: 0.9rem;
+                color: #ced4da;
+                margin-bottom: 1rem;
+            }
+        </style>
+</head>
+
+<body class="bg-light">
+
+    <%- include('partials/header') %>
+
+        <main class="container py-5">
+
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-1">Liad Firouz</h1>
+                <p class="lead text-muted">B.Sc. CS Student | Cyber Security Specialization & Fullstack Dev</p>
+            </div>
+
+            <div class="cv-container row g-0">
+
+                <div class="col-lg-4 cv-sidebar p-4 p-lg-5">
+
+                    <h4 class="fw-bold mb-4">Contact Information</h4>
+                    <p class="small text-light mb-3">Feel free to reach out via the channels below:</p>
+                    <ul class="list-unstyled mb-5 small">
+                        <li class="mb-2"><strong>Email:</strong> <a
+                                href="mailto:Liad.Firouz@gmail.com">Liad.Firouz@gmail.com</a></li>
+                        <li class="mb-2"><strong>Phone:</strong> 053-9803335</li>
+                        <li class="mb-2"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/liad-firouz"
+                                target="_blank">linkedin.com/in/liad-firouz</a></li>
+                        <li class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/LiadFirouz"
+                                target="_blank">github.com/LiadFirouz</a></li>
+                        <li class="mb-2"><strong>Portfolio:</strong> <a href="/">Portfolio Website</a></li>
+                    </ul>
+
+                    <h4 class="fw-bold mb-3">Skills</h4>
+                    <div class="mb-4">
+                        <div class="skill-category">Languages:</div>
+                        <div class="skill-list">C, JavaScript, Python, Java, C#</div>
+
+                        <div class="skill-category">Web Technologies:</div>
+                        <div class="skill-list">Node.js, Express.js, HTML, CSS, Bootstrap</div>
+
+                        <div class="skill-category">Databases & Architecture:</div>
+                        <div class="skill-list">SQL (PostgreSQL), Data Structures</div>
+
+                        <div class="skill-category">Tools & Environment:</div>
+                        <div class="skill-list">Git, GitHub, VS Code, Linux</div>
+                    </div>
+
+                    <h4 class="fw-bold mb-3">Languages</h4>
+                    <ul class="list-unstyled mb-5 small text-light">
+                        <li><strong>Hebrew</strong> – Native proficiency</li>
+                        <li><strong>English</strong> – Fluent</li>
+                    </ul>
+
+                    <h4 class="fw-bold mb-3">Objective</h4>
+                    <p class="small text-light">
+                        Seeking a junior role or internship in Cyber Security or Software Development. Eager to leverage
+                        my low-level programming knowledge and full-stack capabilities to solve complex problems within
+                        a collaborative engineering team.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-8 cv-main p-4 p-lg-5">
+
+                    <h3 class="section-title h4">Summary</h3>
+                    <p class="small mb-5 text-dark">
+                        Motivated Computer Science student specializing in Cyber Security, with hands-on experience in
+                        both systems programming and full-stack web development. Proficient in C, Java, and modern web
+                        technologies, with a strong foundation in database architecture and version control. Possesses a
+                        technical background in computer and control systems, combining deep analytical problem-solving
+                        with a collaborative team-oriented approach.
+                    </p>
+
+                    <h3 class="section-title h4">Education</h3>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-0 fs-6">Computer Science Student – The Open University</h5>
+                        <p class="small text-muted mb-2">Oct 2022 – Present | Second-Year Student</p>
+                        <ul class="small mb-3">
+                            <li>Pursuing a B.Sc. in Computer Science</li>
+                            <li><strong>Specialization:</strong> Cyber Security</li>
+                            <li><strong>Relevant Coursework:</strong> Linear Algebra, Database Systems, Data Structures
+                            </li>
+                        </ul>
+
+                        <h5 class="fw-bold mb-0 fs-6">Engineering Technician Certificate – Ort Singalovski</h5>
+                        <p class="small text-muted mb-2">Sep 2018 – May 2019</p>
+                        <ul class="small mb-0">
+                            <li>Completed practical training in software engineering fundamentals</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="section-title h4 mt-5">Technical Projects</h3>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-1 fs-6">Custom Assembler Implementation (C Language)</h5>
+                        <ul class="small mb-0">
+                            <li>Engineered a fully functional assembler project using C.</li>
+                            <li>Managed memory allocation, bitwise operations, and file handling for input/output
+                                processing.</li>
+                            <li>Maintained robust version control and project iterations utilizing Git.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="section-title h4 mt-5">Military Service</h3>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-0 fs-6">Combat Support – Israeli Defense Forces (IDF)</h5>
+                        <p class="small text-muted mb-2">Jan 2020 – Sep 2022</p>
+                        <ul class="small mb-0">
+                            <li>Performed optical and arc testing for 120mm mortar systems</li>
+                            <li>Provided technical support in a combat unit</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="section-title h4 mt-5">Work Experience</h3>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-1 fs-6">Technical Technician - Computer & Control Systems</h5>
+                        <ul class="small mb-3">
+                            <li>Provided hands-on technical support and system maintenance.</li>
+                        </ul>
+
+                        <h5 class="fw-bold mb-1 fs-6">Primary Education Teacher (Third Grade)</h5>
+                        <ul class="small mb-0">
+                            <li>Developed pedagogical plans and fostered strong communication skills in a dynamic
+                                environment.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="/Liad-Firouz-CV.pdf" target="_blank" class="btn btn-outline-dark fw-bold px-4 py-2">
+                    Download as PDF
+                </a>
+            </div>
+
+        </main>
+
+        <%- include('partials/footer') %>
+
+</body>
+
+</html>
