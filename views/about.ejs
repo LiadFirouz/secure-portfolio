@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+<style>
+    /* About Page Styling */
+    .profile-img-about {
+        border: 4px solid #000;
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-container {
+        min-height: calc(100vh - 200px);
+    }
+</style>
 
 <head>
     <title>About Me - Liad Firouz</title>
@@ -7,16 +20,15 @@
 </head>
 
 <body>
-
     <%- include('partials/header') %>
 
-        <main class="container py-5" style="min-height: calc(100vh - 200px);">
+        <main class="container py-5 about-container">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
 
                 <div class="col-10 col-sm-8 col-lg-4 mx-auto text-center">
-                    <img src="/profile.jpeg" class="d-block mx-lg-auto img-fluid rounded-circle shadow-sm"
-                        alt="Liad Firouz" width="250" height="250" loading="lazy"
-                        style="border: 4px solid #000; object-fit: cover;">
+                    <img src="/profile.jpeg"
+                        class="d-block mx-lg-auto img-fluid rounded-circle shadow-sm profile-img-about"
+                        alt="Liad Firouz" loading="lazy">
                 </div>
 
                 <div class="col-lg-8">
@@ -28,28 +40,29 @@
                     </p>
                     <p class="text-body-secondary fs-5">
                         My academic path involves rigorous theoretical modeling paired with intensive hands-on
-                        development. From engineering a custom two-pass assembler in C to developing predictive data
-                        models in Python, I thrive on breaking down complex problems into clean, optimized, and secure
-                        logical structures.
+                        development.
+                        From engineering a custom two-pass assembler in C to developing predictive data models in
+                        Python,
+                        I thrive on breaking down complex problems into clean, optimized, and secure logical structures.
                     </p>
                     <p class="text-body-secondary fs-5">
                         Parallel to my technical track, I leverage strong leadership and communicative dynamics as an
                         instructor, translating abstract and intricate concepts into highly accessible structured
-                        pathways. This combination allows me to approach engineering challenges with both technical
-                        precision and systemic clarity.
+                        pathways.
+                        This combination allows me to approach engineering challenges with both technical precision and
+                        systemic clarity.
                     </p>
+
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
                         <a href="/cv" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold">Review My CV</a>
                         <a href="mailto:liad.firouz@gmail.com" class="btn btn-outline-dark btn-lg px-4 fw-bold">Get In
                             Touch</a>
                     </div>
                 </div>
-
             </div>
         </main>
 
         <%- include('partials/footer') %>
-
 </body>
 
 </html>

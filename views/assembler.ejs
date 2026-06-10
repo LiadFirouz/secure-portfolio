@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>Assembler Project - Liad Firouz</title>
+    <%- include('partials/head') %>
+    <style>
+        .project-hero { background-color: #f8f9fa; padding: 4rem 0; }
+        .tech-box { background-color: #f1f3f5; border-left: 5px solid #0d6efd; padding: 1.5rem; margin: 2rem 0; }
+        .code-highlight { font-family: monospace; color: #d63384; }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+    <main class="container py-5">
+        <div class="project-hero text-center mb-5 rounded">
+            <h1 class="display-3 fw-bold">Custom Two-Pass Assembler</h1>
+            <p class="lead text-muted">Systems Programming & Low-Level Architecture in C</p>
+            <a href="https://github.com/LiadFirouz/Assembler" target="_blank" class="btn btn-dark btn-lg mt-3">View Source Code</a>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3>The Challenge: Mastering Pointers and Symbolic Logic</h3>
+                <p>
+                    Throughout this project, the most significant challenge was memory management at the C level. Navigating between functions while ensuring pointer integrity required rigorous attention to data lifecycles—any minor mistake in pointer management frequently led to memory leaks or frustrating segmentation faults.
+                </p>
+                <p>
+                    The complexity peaked during the implementation of the Symbol Table. As the assembler operates using a 'Two-Pass' methodology, I had to construct a dynamic table to efficiently manage addresses and symbols, while simultaneously resolving forward references.
+                </p>
+                
+                
+
+                <div class="tech-box">
+                    <h5 class="fw-bold">Key Takeaways from the Development Process:</h5>
+                    <ul class="mb-0">
+                        <li><strong>Memory Management:</strong> Mastering manual <span class="code-highlight">malloc</span> and <span class="code-highlight">free</span> cycles.</li>
+                        <li><strong>Data Structures:</strong> Implementing linked lists for efficient symbol storage.</li>
+                        <li><strong>Workflow:</strong> Utilizing Gemini as a pair-programming partner to simulate edge-case logic and optimize debugging.</li>
+                    </ul>
+                </div>
+
+                <h3>Debugging with AI</h3>
+                <p>
+                    During development, I leveraged Gemini to simulate logical bugs and optimize search algorithms within the symbol table. Using AI did not replace the hard work; instead, it served as a "debugging partner" that helped identify memory management anomalies early on, ultimately allowing me to focus on the system's overall architecture rather than just squashing bugs.
+                </p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="/" class="btn btn-outline-dark">← Back to Portfolio</a>
+        </div>
+    </main>
+
+    <div class="container">
+        <%- include('partials/footer') %>
+    </div>
+</body>
+</html>

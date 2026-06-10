@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>Simon Game - Liad Firouz</title>
+    <%- include('partials/head') %>
+        <style>
+            .project-hero {
+                background-color: #f8f9fa;
+                padding: 4rem 0;
+            }
+
+            .tech-box {
+                background-color: #f1f3f5;
+                border-left: 5px solid #ffc107;
+                padding: 1.5rem;
+                margin: 2rem 0;
+            }
+        </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main class="container py-5">
+            <div class="project-hero text-center mb-5 rounded">
+                <h1 class="display-3 fw-bold">Simon Memory Game</h1>
+                <p class="lead text-muted">Interactive JavaScript Logic & DOM Manipulation</p>
+                <a href="https://liadfirouz.github.io/Simon-Game/" target="_blank" class="btn btn-dark btn-lg mt-3">Play
+                    the Game</a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h3>The Challenge: Logical State Management</h3>
+                    <p>The Simon Game was an exercise in managing application state. Ensuring that the game sequence
+                        flows correctly while updating the UI in real-time taught me how to handle event-driven
+                        architecture and asynchronous logic effectively.</p>
+
+                    <div class="tech-box">
+                        <h5 class="fw-bold">Core Technologies:</h5>
+                        <ul>
+                            <li><strong>State Management:</strong> Tracking game sequences and player inputs.</li>
+                            <li><strong>DOM Manipulation:</strong> Dynamic UI updates and responsive visual feedback.
+                            </li>
+                            <li><strong>Event Listeners:</strong> Creating a seamless, interactive user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5"><a href="/" class="btn btn-outline-dark">← Back to Portfolio</a></div>
+        </main>
+        <%- include('partials/footer') %>
+</body>
+
+</html>

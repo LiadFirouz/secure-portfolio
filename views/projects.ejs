@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects - Liad Firouz</title>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main class="container py-5">
+    <h1 class="display-4 fw-bold mb-5">Technical Projects</h1>
+    
+    <div class="card mb-5 shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title fw-bold">Custom Two-Pass Assembler (C)</h2>
+        <h6 class="card-subtitle mb-3 text-muted">Systems Programming & Architecture</h6>
+        <p class="card-text">
+          Designed and implemented a full assembler that converts assembly language into machine code. 
+          This project involved low-level memory manipulation, symbol table management, and two-pass logical parsing.
+        </p>
+        <div class="bg-light p-3 rounded mb-3">
+          <h5 class="small fw-bold">Key Technical Challenges:</h5>
+          <ul>
+            <li><strong>Memory Efficiency:</strong> Implementing manual memory allocation and dynamic structures in C.</li>
+            <li><strong>Bitwise Logic:</strong> Handling machine code instructions via bit manipulation and binary encoding.</li>
+            <li><strong>Two-Pass Parsing:</strong> Resolving forward references and managing a complex symbol table architecture.</li>
+          </ul>
+        </div>
+        <a href="https://github.com/LiadFirouz/Assembler" target="_blank" class="btn btn-dark">View on GitHub</a>
+      </div>
+    </div>
+
+    </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

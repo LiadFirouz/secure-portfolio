@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>Stock Predictor - Liad Firouz</title>
+    <%- include('partials/head') %>
+        <style>
+            .project-hero {
+                background-color: #f8f9fa;
+                padding: 4rem 0;
+            }
+
+            .tech-box {
+                background-color: #f1f3f5;
+                border-left: 5px solid #198754;
+                padding: 1.5rem;
+                margin: 2rem 0;
+            }
+        </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main class="container py-5">
+            <div class="project-hero text-center mb-5 rounded">
+                <h1 class="display-3 fw-bold">Stock Price Predictor</h1>
+                <p class="lead text-muted">Machine Learning & Data Analysis in Python</p>
+                <a href="https://github.com/LiadFirouz/StockPricePrediction" target="_blank"
+                    class="btn btn-dark btn-lg mt-3">View Source Code</a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h3>The Challenge: Predictive Modeling</h3>
+                    <p>Developing a system that forecasts financial trends requires rigorous data preprocessing and
+                        model selection. The core challenge was transforming raw historical market data into structured
+                        input that an ML algorithm could interpret effectively.</p>
+
+                    <div class="tech-box">
+                        <h5 class="fw-bold">Key Technical Skills:</h5>
+                        <ul>
+                            <li><strong>Data Preprocessing:</strong> Cleaning and normalizing historical financial
+                                time-series data.</li>
+                            <li><strong>Model Implementation:</strong> Utilizing linear regression models to identify
+                                underlying trends.</li>
+                            <li><strong>Insight Generation:</strong> Converting raw metrics into actionable predictive
+                                visualisations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5"><a href="/" class="btn btn-outline-dark">← Back to Portfolio</a></div>
+        </main>
+        <%- include('partials/footer') %>
+</body>
+
+</html>
